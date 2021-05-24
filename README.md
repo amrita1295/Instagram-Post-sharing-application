@@ -1,1 +1,1 @@
-# Instagram_clone
+# clone of instagaram 
