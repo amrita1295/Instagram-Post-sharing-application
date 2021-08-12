@@ -11,15 +11,16 @@ const DeleteAccount  = ()=>{
     const togglePassword = () =>{
         setIsPasswordShown(!isPasswordShown);
    }
-    const PostData = ()=>{
+    const PostData = (id)=>{
         if(!/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)){
             M.toast({html: "Invalid email",classes:"#c62828 red darken-3"})
             return
         }
-        fetch('/delete-account',{
-            method:"post",
+        fetch('/delete-account/${id}',{
+            method:"delete",
             headers:{
-                "Content-Type":"application/json"
+                "Content-Type":"application/json",
+                // "Authorization":"Bearer"+"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"
             },
             body:JSON.stringify({
                 email,
@@ -27,6 +28,7 @@ const DeleteAccount  = ()=>{
             })
         }).then(res=>res.json())
         .then(data=>{
+            console.log(data)
            if(data.error){
               M.toast({html: data.error,classes:"#c62828 red darken-3"})
            }

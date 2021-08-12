@@ -74,7 +74,7 @@ router.post('/signup',(req,res)=>{
           sgMail.setApiKey(SENDGRID_API_KEY)
           const msg = {
             to: user.email, // Change to your recipient
-            from: 'creativetech1142@gmail.com', // Change to your verified sender
+            from: 'clone@thdcinsta.me', // Change to your verified sender
             subject: 'Welcome to Instagram',
             text: 'Explore and enjoy beautiful posts and videos by making a lot of friends online',
             html: `Hii <strong>${user.username}</strong> Welcome to instagram<br> 
@@ -148,7 +148,7 @@ router.post('/reset-password',(req,res)=>{
           sgMail.setApiKey(SENDGRID_API_KEY)
           const msg = {
             to: user.email, // Change to your recipient
-            from: 'creativetech1142@gmail.com', // Change to your verified sender
+            from: 'clone@thdcinsta.me', // Change to your verified sender
             subject: 'Password Reset Request',
             text: 'Explore and enjoy beautiful posts and videos by making a lot of friends online',
             html: `Hii <strong>${user.username}</strong> we received your Instagram password change request<br>
@@ -203,7 +203,7 @@ router.post('/new-password',(req,res)=>{
           sgMail.setApiKey(SENDGRID_API_KEY)
           const msg = {
             to: user.email, // Change to your recipient
-            from: 'creativetech1142@gmail.com', // Change to your verified sender
+            from: 'clone@thdcinsta.me', // Change to your verified sender
             subject: 'Password Updated Successfully',
             text: 'Explore and enjoy beautiful posts and videos by making a lot of friends online',
             html: `Hii <strong>${user.username}</strong> your password was changed as per your request<br>
@@ -243,7 +243,7 @@ router.post('/change-email',(req,res)=>{
           sgMail.setApiKey(SENDGRID_API_KEY)
           const msg = {
             to: user.email, // Change to your recipient
-            from: 'creativetech1142@gmail.com', // Change to your verified sender
+            from: 'clone@thdcinsta.me', // Change to your verified sender
             subject: 'Email Change Request',
             text: 'Explore and enjoy beautiful posts and videos by making a lot of friends online',
             html: `Hii <strong>${user.username}</strong> we received your Instagram email change request<br>
@@ -285,7 +285,7 @@ router.post('/new-email',(req,res)=>{
           sgMail.setApiKey(SENDGRID_API_KEY)
           const msg = {
             to: user.email, // Change to your recipient
-            from: 'creativetech1142@gmail.com', // Change to your verified sender
+            from: 'clone@thdcinsta.me', // Change to your verified sender
             subject: 'Email updated successfully',
             text: 'Explore and enjoy beautiful posts and videos by making a lot of friends online',
             html: `Hii <strong>${user.username}</strong> your email was changed as per your request<br>
@@ -361,17 +361,30 @@ router.post('/change-name',(req,res)=>{
   }) 
 })
 
-router.post('/delete-account',(req,res)=>{
-  User.findOne({email:req.body.email}).then(user=>{
-    if(!user){
+router.delete('/delete-account/:id',(req,res)=>{
+  // User.findOne({email:req.body.email}).then(user=>{
+  //   if(!user){
+    //   router.get('/deleteuser/:id', function(req, res) { 
+
+      var db = req.db;
+    
+        var uid = req.params.id.toString();
+        var collection = db.get('users');
+    
+        collection.remove({"_id":uid}, function(err, result) 
+        { 
+          res.send( (result === 1) ? { msg: 'Deleted' } : { msg: 'error: '+ err } );
+        });
+    
+    
       return res.status(422).json({error:"Invalid credentials"})
-  }
+  
     user.save().then((user)=>{
         const sgMail = require('@sendgrid/mail')
-        sgMail.setApiKey("**********************************")
+        sgMail.setApiKey(SENDGRID_API_KEY)
         const msg = {
           to: user.email, // Change to your recipient
-          from: 'money148001@gmail.com', // Change to your verified sender
+          from: 'clone@thdcinsta.me', // Change to your verified sender
           subject: 'Delete Account Request',
           text: 'Explore and enjoy beautiful posts and videos by making a lot of friends online',
           html: `Hii <strong>${user.username}</strong> we have seen your request for deleting the account. You are just one step away now. Kindly email us the reason behind deleting it and get it deleted permanently.<br>
@@ -388,7 +401,7 @@ router.post('/delete-account',(req,res)=>{
            res.json({message:"Check your email messages for further information"})
        })
   })
-})
+
 
 
 module.exports = router

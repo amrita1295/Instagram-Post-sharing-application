@@ -11,8 +11,8 @@ import UserProfile from './components/screens/UserProfile'
 import {reducer,initialState} from './reducers/userReducer'
 import Reset from './components/screens/Reset'
 // import NewPassword from './components/screens/NewPassword'
-// import ChangeEmail from './components/screens/ChangeEmail'
-// import NewEmail from './components/screens/NewEmail'
+import ChangeEmail from './components/screens/ChangeEmail'
+import NewEmail from './components/screens/NewEmail'
 import DeleteAccount from './components/screens/DeleteAccount'
 import {useHistory,Switch} from 'react-router-dom'
 // import ChangeUsername from './components/screens/Change-username'
@@ -58,13 +58,13 @@ const Routing = ()=>{
      </Route>
      <Route path="/reset/:token">
         <NewPassword />
-      </Route>
+      </Route> */}
       <Route exact path="/change-email">
       <ChangeEmail />
       </Route>
       <Route path="/changeEmail/:token">
       <NewEmail />
-    </Route> */}
+    </Route>
     <Route path="/delete-account">
     <DeleteAccount />
   </Route>
