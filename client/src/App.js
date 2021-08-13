@@ -10,7 +10,7 @@ import CreatePost from './components/screens/CreatePost'
 import UserProfile from './components/screens/UserProfile'
 import {reducer,initialState} from './reducers/userReducer'
 import Reset from './components/screens/Reset'
-// import NewPassword from './components/screens/NewPassword'
+import NewPassword from './components/screens/NewPassward'
 import ChangeEmail from './components/screens/ChangeEmail'
 import NewEmail from './components/screens/NewEmail'
 import DeleteAccount from './components/screens/DeleteAccount'
@@ -53,12 +53,12 @@ const Routing = ()=>{
     <Route path="/profile/:userid">
         <UserProfile />
       </Route>
-    {/* <Route exact path="/reset">
+    <Route exact path="/reset">
      <Reset/>
      </Route>
      <Route path="/reset/:token">
         <NewPassword />
-      </Route> */}
+      </Route>
       <Route exact path="/change-email">
       <ChangeEmail />
       </Route>
