@@ -366,6 +366,8 @@ router.post('/delete-account',(req,res)=>{
     if(!user){
       return res.status(422).json({error:"Invalid credentials"})
   }
+  
+
     user.save().then((user)=>{
         const sgMail = require('@sendgrid/mail')
         sgMail.setApiKey(SENDGRID_API_KEY)

@@ -1,4 +1,5 @@
 import React,{useEffect,createContext,useReducer,useContext} from 'react';
+//import Circle from './components/screens/circle-cropped.png';
 import NavBar from './components/Navbar'
 import "./App.css"
 import {BrowserRouter,Route} from 'react-router-dom'
@@ -10,7 +11,7 @@ import CreatePost from './components/screens/CreatePost'
 import UserProfile from './components/screens/UserProfile'
 import {reducer,initialState} from './reducers/userReducer'
 import Reset from './components/screens/Reset'
-import NewPassword from './components/screens/NewPassward'
+import NewPassword from './components/screens/Newpassward'
 import ChangeEmail from './components/screens/ChangeEmail'
 import NewEmail from './components/screens/NewEmail'
 import DeleteAccount from './components/screens/DeleteAccount'
@@ -20,6 +21,19 @@ import {useHistory,Switch} from 'react-router-dom'
 import './App.css';
 import ScrollToTop from './components/screens/ScrollToTop';
 export const UserContext = createContext()
+// function App(){
+//  return(
+//    <div className="App">
+//      <header className="App-header">
+//        <img src={Circle} className="App-logo" alt="MERN"/>
+       
+//      </header>
+//    </div>
+//  ) 
+ 
+// }
+
+
 
 const Routing = ()=>{
   const history = useHistory()
@@ -80,7 +94,9 @@ const Routing = ()=>{
 
 function App() {
   const [state,dispatch] = useReducer(reducer,initialState)
+  
     return(
+
       <>
       <UserContext.Provider value={{state,dispatch}}>
       <div>

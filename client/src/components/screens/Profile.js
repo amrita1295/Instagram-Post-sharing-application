@@ -245,11 +245,11 @@ const Profile  = ()=>{
               </div>
                <div className="margin-set">
                
-                   <h4 className="size"><strong>{state?state.username:"loading"}</strong>&nbsp;&nbsp;<Link to="/change-username"><i class="fas fa-edit edit-icon"></i></Link></h4>
-                   <h5 className="size">{state?state.name:"loading"}&nbsp;&nbsp;<Link to='/change-name'><i class="fas fa-edit edit-icon1"></i></Link></h5>
+                   <h4 className="size"><strong>{state?state.username:"loading"}</strong>&nbsp;&nbsp;<Link to="/change-username"><i className="fas fa-edit edit-icon"></i></Link></h4>
+                   <h5 className="size">{state?state.name:"loading"}&nbsp;&nbsp;<Link to='/change-name'><i className="fas fa-edit edit-icon1"></i></Link></h5>
                    <Link to="/change-email">
                    <button style={{marginLeft:"0px"}} className="btn waves-effect waves-light #64b5f6 blue darken-1">
-                  Update Email <i style={{fontSize:"15px"}} class="fas fa-edit"></i>
+                  Update Email <i style={{fontSize:"15px"}} className="fas fa-edit"></i>
                 </button>
                 </Link> 
                 <Link to="/delete-account">
