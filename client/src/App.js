@@ -21,20 +21,6 @@ import {useHistory,Switch} from 'react-router-dom'
 import './App.css';
 import ScrollToTop from './components/screens/ScrollToTop';
 export const UserContext = createContext()
-// function App(){
-//  return(
-//    <div className="App">
-//      <header className="App-header">
-//        <img src={Circle} className="App-logo" alt="MERN"/>
-       
-//      </header>
-//    </div>
-//  ) 
- 
-// }
-
-
-
 const Routing = ()=>{
   const history = useHistory()
   const {state,dispatch} = useContext(UserContext)
