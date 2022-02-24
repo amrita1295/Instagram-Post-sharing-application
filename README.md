@@ -34,7 +34,7 @@ Creator
 This Project was built by -
 
 Amrita Singh Jassal
-![photo](https://user-images.githubusercontent.com/56605853/155554690-8b05d79d-f42e-49de-8fb8-d793d74011ea.png | width=250)
+![photo](https://user-images.githubusercontent.com/56605853/155554690-8b05d79d-f42e-49de-8fb8-d793d74011ea.png =250x250)
 
 
 
