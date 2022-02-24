@@ -34,8 +34,9 @@ Creator
 This Project was built by -
 
 Amrita Singh Jassal
-![photo](https://user-images.githubusercontent.com/56605853/155554690-8b05d79d-f42e-49de-8fb8-d793d74011ea.png =250x250)
-<img src=src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" height="400" />
+![photo](https://user-images.githubusercontent.com/56605853/155556388-c32d298f-d550-4ce0-b247-e5250890e28b.png)
+
+
 
 
 Pawanupadhyay10
