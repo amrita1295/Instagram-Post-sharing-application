@@ -33,8 +33,10 @@ Try it here - http://instagram-twin.herokuapp.com/signin
 Creator
 This Project was built by -
 
-Amrita Singh Jassal
-![photo](https://user-images.githubusercontent.com/56605853/155556388-c32d298f-d550-4ce0-b247-e5250890e28b.png)
+Amrita Singh Jassal <br/>
+
+![photo](https://user-images.githubusercontent.com/56605853/155557239-3a98a1c0-1bb2-4d33-8141-b90c5dd96519.png)
+
 
 
 
