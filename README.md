@@ -35,7 +35,7 @@ This Project was built by -
 
 Amrita Singh Jassal
 ![photo](https://user-images.githubusercontent.com/56605853/155554690-8b05d79d-f42e-49de-8fb8-d793d74011ea.png =250x250)
-![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png =250x250)
+<img src=src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" height="400" />
 
 
 Pawanupadhyay10
