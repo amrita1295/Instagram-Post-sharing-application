@@ -33,7 +33,8 @@ Creator
 This Project was built by -
 
 Amrita Singh Jassal
-[WhatsApp Image 2022-02-21 at 6 20 49 PM](https://user-images.githubusercontent.com/56605853/155549847-3cbd78ef-2927-4db3-ac63-d586afa23735.jpeg)
+![photo](https://user-images.githubusercontent.com/56605853/155549847-3cbd78ef-2927-4db3-ac63-d586afa23735.jpeg)
+
 
 
 Pawanupadhyay10
