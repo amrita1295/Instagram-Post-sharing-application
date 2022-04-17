@@ -81,7 +81,7 @@ const fetchUsers = (query)=>{
     return (
         <nav className="navbar">
         <div className="nav-wrapper white">
-          <Link to={state?"/":"/signin"} className="brand-logo left">Instagram</Link>
+          <Link to={state?"/":"/signin"} className="brand-logo left">Post@Insta</Link>
           <ul id="nav-mobile" className="right">
             { renderList() }
           </ul>

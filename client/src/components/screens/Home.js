@@ -23,7 +23,8 @@ const ReadMore = ({children}) => {
         </p>
     )
 }
-const Home  = (props) =>{
+const Home  = (props) =>
+{
     const [data,setData] = useState([])
     const {state,dispatch} = useContext(UserContext)
     useEffect(()=>{

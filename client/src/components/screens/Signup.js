@@ -76,50 +76,50 @@ const Signup = () => {
     return (
         <div className="mycard">
           <div className="card auth-card input-field">
-            <h2>Instagram</h2>
-            <input
-            type="text"
-            placeholder="Enter a username"
-            value={username}
-            onChange={(e)=>setUsername(e.target.value)}
-            />
-            <input
-            type="text"
-            placeholder="Your Name"
-            value={name}
-            onChange={(e)=>setName(e.target.value)}
-            />
-            <input
-            type="text"
-            placeholder="Your Email"
-            value={email}
-            onChange={(e)=>setEmail(e.target.value)}
-            />
-            <input
-            type={isPasswordShown ? "text":"password"}
-            placeholder="Set a password"
-            value={passward}
-            onChange={(e) =>{
+              <h2>Post@Insta</h2>
+              <input
+              type="text"
+              placeholder="Enter a username"
+              value={username}
+              onChange={(e)=>setUsername(e.target.value)}
+              />
+              <input
+              type="text"
+              placeholder="Your Name"
+              value={name}
+              onChange={(e)=>setName(e.target.value)}
+              />
+               <input
+              type="text"
+              placeholder="Your Email"
+              value={email}
+              onChange={(e)=>setEmail(e.target.value)}
+              />
+              <input
+              type={isPasswordShown ? "text":"password"}
+              placeholder="Set a password"
+              value={passward}
+              onChange={(e) =>{
                 setPasword(e.target.value)
-            } }/>
-            <button style={{fontSize:"15px"}} className="btn #64b5f6 blue darken-1" onClick={togglePassword}>
-            {isPasswordShown===true?<p style={{fontSize: "15px",marginTop:"0px"}}>Hide Password</p>:<p style={{fontSize: "15px",marginTop:"0px"}}>Show Password</p>} <i style={{fontSize:"15px"}} className="far fa-eye"></i>
-          </button>
-          <br></br>
-          <span style={{ 
-            fontWeight: 'bold', 
-            color: 'red', 
-            marginTop: '15px'
-          }}>Your password must have atleast :-
-           <ul style={{marginTop:"0px"}}>
-           <li>Minimum 8 characters.</li>
-           <li>One lowercase alphabet</li>
-           <li>One uppercase alphabet</li>
-           <li>One numeric value</li>   
-           </ul>
-          </span> 
-            <div className="file-field input-field">
-            <div className="btn #64b5f6 blue darken-1">
+             } }/>
+             <button style={{fontSize:"15px"}} className="btn #64b5f6 blue darken-1" onClick={togglePassword}>
+             {isPasswordShown===true?<p style={{fontSize: "15px",marginTop:"0px"}}>Hide Password</p>:<p style={{fontSize: "15px",marginTop:"0px"}}>Show Password</p>} <i style={{fontSize:"15px"}} className="far fa-eye"></i>
+              </button>
+             <br></br>
+              <span style={{ 
+              fontWeight: 'bold', 
+              color: 'red', 
+              marginTop: '15px'
+              }}>Your password must have atleast :-
+              <ul style={{marginTop:"0px"}}>
+              <li>Minimum 8 characters.</li>
+                <li>One lowercase alphabet</li>
+                <li>One uppercase alphabet</li>
+                <li>One numeric value</li>   
+                </ul>
+                </span> 
+                 <div className="file-field input-field">
+                <div className="btn #64b5f6 blue darken-1">
                 <span>Profile pic</span>
                 <input type="file" onChange={(e)=>{
                     var file = e.target.files[0];
