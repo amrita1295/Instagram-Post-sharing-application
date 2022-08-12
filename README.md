@@ -42,7 +42,4 @@ Amrita Singh Jassal <br/>
 
 
 
-Pawanupadhyay10
-Pawan Upadhyay(https://github.com/amrita1295)
 
-|:---: |:---: |:---:
