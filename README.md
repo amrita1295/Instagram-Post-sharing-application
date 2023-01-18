@@ -28,8 +28,7 @@ I got more experience in MERN stack and JWT by building this application. Got to
 The current point system that I have is dynamic but I would love to introduce videos and story feature options into the application to make the whole experience even more rewarding.
 
 Try it out here
-You can download It from the google play store
-Try it here - http://instagram-twin.herokuapp.com/signin
+http://instagram-twin.herokuapp.com/signin
 
 Creator
 This Project was built by -
